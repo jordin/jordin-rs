@@ -1,0 +1,13 @@
+[package]
+name = "jordin"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["jordin <crates@jord.in>"]
+description = "A crate providing access to the name \"jordin\""
+documentation = "https://docs.rs/jordin"
+repository = "https://github.com/jordin/jordin-rs"
+homepage = "https://github.com/jordin/jordin-rs"
+keywords = ["jordin", "jordan"]
+
+[dependencies]
