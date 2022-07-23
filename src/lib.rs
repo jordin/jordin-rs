@@ -91,12 +91,34 @@ pub fn println_name() {
     println!("{}", NAME);
 }
 
+/// Print the [`NAME`] ("jordin") to the standard error of the current process, without a newline.
+/// 
+/// # Example
+/// ```rust
+/// // Print "jordin" to stderr, without a newline
+/// jordin::eprint_name(); // "jordin" has been printed to stderr
+/// ````
+pub fn eprint_name() {
+    eprint!("{}", NAME);
+}
+
+/// Print the [`NAME`] ("jordin") to the standard error of the current process, with a newline.
+/// 
+/// # Example
+/// ```rust
+/// // Print "jordin" to stderr, with a newline
+/// jordin::eprintln_name(); // "jordin" has been printed to stderr
+/// ```
+pub fn eprintln_name() {
+    eprintln!("{}", NAME);
+}
+
 /// Print the [`NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES`] ("Jordin") to the standard output of the current process, without a newline.
 /// 
 /// # Example
 /// ```rust
 /// // Print "Jordin" to stdout, without a newline
-/// jordin::print_name(); // "Jordin" has been printed to stdout
+/// jordin::print_name_adhering_to_english_proper_noun_capitalisation_rules(); // "Jordin" has been printed to stdout
 /// ```
 pub fn print_name_adhering_to_english_proper_noun_capitalisation_rules() {
     print!("{}", NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES);
@@ -107,10 +129,32 @@ pub fn print_name_adhering_to_english_proper_noun_capitalisation_rules() {
 /// # Example
 /// ```rust
 /// // Print "Jordin" to stdout, with a newline
-/// jordin::println_name(); // "Jordin" has been printed to stdout
+/// jordin::println_name_adhering_to_english_proper_noun_capitalisation_rules(); // "Jordin" has been printed to stdout
 /// ```
 pub fn println_name_adhering_to_english_proper_noun_capitalisation_rules() {
     println!("{}", NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES);
+}
+
+/// Print the [`NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES`] ("Jordin") to the standard error of the current process, without a newline.
+/// 
+/// # Example
+/// ```rust
+/// // Print "Jordin" to stderr, without a newline
+/// jordin::eprint_name_adhering_to_english_proper_noun_capitalisation_rules(); // "Jordin" has been printed to stderr
+/// ```
+pub fn eprint_name_adhering_to_english_proper_noun_capitalisation_rules() {
+    eprint!("{}", NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES);
+}
+
+/// Print the [`NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES`] ("Jordin") to the standard error of the current process, with a newline.
+/// 
+/// # Example
+/// ```rust
+/// // Print "Jordin" to stderr, with a newline
+/// jordin::eprintln_name_adhering_to_english_proper_noun_capitalisation_rules(); // "Jordin" has been printed to stderr
+/// ```
+pub fn eprintln_name_adhering_to_english_proper_noun_capitalisation_rules() {
+    eprintln!("{}", NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES);
 }
 
 #[cfg(test)]
