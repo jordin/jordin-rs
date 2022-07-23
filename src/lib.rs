@@ -91,6 +91,28 @@ pub fn println_name() {
     println!("{}", NAME);
 }
 
+/// Print the [`NAME`] ("jordin") to the standard error of the current process, without a newline.
+/// 
+/// # Example
+/// ```rust
+/// // Print "jordin" to stderr, without a newline
+/// jordin::eprint_name(); // "jordin" has been printed to stderr
+/// ````
+pub fn eprint_name() {
+    eprint!("{}", NAME);
+}
+
+/// Print the [`NAME`] ("jordin") to the standard error of the current process, with a newline.
+/// 
+/// # Example
+/// ```rust
+/// // Print "jordin" to stderr, with a newline
+/// jordin::eprintln_name(); // "jordin" has been printed to stderr
+/// ```
+pub fn eprintln_name() {
+    eprintln!("{}", NAME);
+}
+
 /// Print the [`NAME_ADHERING_TO_ENGLISH_PROPER_NOUN_CAPITALISATION_RULES`] ("Jordin") to the standard output of the current process, without a newline.
 /// 
 /// # Example
